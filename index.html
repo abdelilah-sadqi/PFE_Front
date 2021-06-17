@@ -1,0 +1,173 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+    <link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet"  href="css/main.min.css">
+</head>
+<body>
+    
+    <input type="checkbox" id="sidebar-toggle">
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h3 class="brand" >
+                <span class="ti-brand"></span> 
+                <!-- <i class="fas fa-hospital"></i> -->
+                <span>Centre Sadqi</span>
+            </h3> 
+            <label for="sidebar-toggle" class="ti-menu-alt"></label>
+        </div>
+        
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <span class="fa fa-home"></span>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Ajout_Pat.html">
+                        <span class="fa fa-user-plus"></span>
+                        <span>Nouveau Patient</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="patients.html">
+                        <span class="fa fa-users"></span>
+                        <span>Patients</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="ajout_rdv.html">
+                        <span class="fa fa-book"></span>
+                        <span>Nouveau rendez-vous</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Ordonnance.html">
+                        <span class="bx bxs-capsule"></span>
+                        <span>Ordonnance</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="fa fa-adjust"></span>
+                        <span>Statistique</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="login.html">
+                        <span class="fa fa-sign-out"></span>
+                        <span>Sign out</span>
+                    </a>
+                </li>
+                
+                
+            </ul>
+        </div>
+    </div>
+    
+    
+    <div class="main-content">
+        
+        <header>
+            <div class="search-wrapper">
+                <span class="ti-search"></span>
+                <input type="search" placeholder="Search">
+            </div>
+            
+            <div class="social-icons">
+                <span class="ti-bell"></span>
+                <span class="ti-comment"></span>
+                <div></div>
+            </div>
+        </header>
+        
+        <main>
+            
+            
+            
+            <div class="dash-cards">
+                <div class="card-single">
+                    <div class="card-body">
+                        <span class="fa fa-users"></span>
+                        <div>
+                            <h5>RDV Du jour</h5>
+                            <h4>5</h4>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="rdv_jour.html">Consulter </a>
+                    </div>
+                </div>
+               
+                <div class="card-single">
+                    <div class="card-body">
+                        <span class="fa fa-ban"></span>
+                        <div>
+                            <h5>RDV Annulé</h5>
+                            <h4>2</h4>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="rdv_annulé.html">Consulter</a>
+                    </div>
+                </div>
+                
+                <div class="card-single">
+                    <div class="card-body">
+                        <span class="fa fa-exclamation-triangle"></span>
+                        <div>
+                            <h5>Urgent</h5>
+                            <h4>1</h4>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="">Consulter </a>
+                    </div>
+                </div>
+            </div>
+             
+            
+            <section class="recent">
+                <div id="calendar"></div>
+                <script src="js/main.min.js"></script>
+                <script src="js/calend.js"></script>
+              
+                </section>
+                    <!--  <div class="text-center">
+                                <button >
+                                    <span class="btn btn-success" role="link"></span>
+                                    Ajouter rendez-vous
+                                </button>
+                            </div> -->
+                           <!--  <div class="text-center">
+                                <a href="#" class="btn btn-success" > Ajouter rendez-vous</a>
+                            </div> -->
+
+                            <div class="col-lg-6 col-md-6 col-sm-4 col-xs-4">
+            <div class="btn-group pull-right">
+                <a href="ajout_rdv.html" class="btn btn-primary"><i class="fa fa-plus"></i>Nouveau RDV</a>
+            </div>
+        </div>
+
+                   <!--  <div class="button-success" align="center" >
+                        <button type="button" class="btn btn-success">Success</button>
+                    </div> -->
+               
+                </div>
+          
+           
+        </main>
+        
+    </div>
+  
+</body>
+</html>

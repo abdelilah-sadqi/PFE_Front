@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ajouter un Patient </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="css/style1.css">
+  <link rel="stylesheet" href="css/ajout_pat.css">
+  <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+	<script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <input type="checkbox" id="sidebar-toggle">
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h3 class="brand">
+                <span class="ti-brand"></span> 
+                <!-- <i class="fas fa-hospital"></i> -->
+                <span>Centre Sadqi</span>
+            </h3> 
+            <label for="sidebar-toggle" class="ti-menu-alt"></label>
+        </div>
+        
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <span class="fa fa-home"></span>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="ajout_pat.html">
+                        <span class="fa fa-user-plus"></span>
+                        <span>Nouveau Patient</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="patients.html">
+                        <span class="fa fa-users"></span>
+                        <span>Patients</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="ajout_rdv.html">
+                        <span class="fa fa-book"></span>
+                        <span>Nouveau rendez-vous</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Ordonnance.html">
+                        <span class="bx bxs-capsule"></span>
+                        <span>Ordonnance</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="fa fa-adjust"></span>
+                        <span>Statistique</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="login.html">
+                        <span class="fa fa-sign-out"></span>
+                        <span>Sign out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+     <div class="main-content">
+        
+        <header>
+            <div class="search-wrapper">
+                <span class="ti-search"></span>
+                <input type="search" placeholder="Search">
+            </div>
+            
+            <div class="social-icons">
+                <span class="ti-bell"></span>
+                <span class="ti-comment"></span>
+                <div></div>
+            </div>
+        </header>
+        <main>
+        	 
+              <div class="wraper container-fluid">
+                <div class="page-title">
+                    <h2>
+                         <img src="img/add-3.png"  /> Ajouter un patient 
+                    </h2>
+                </div>
+
+                <form  action="index.html">
+
+                    <div class="row">
+                
+                	    <h5><i class="fa fa-pencil"></i>Informations patient</h5>
+                	    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-left: 20px; padding: 30px; border-left-style: dotted; border-left-width: 2px; border-left-color: #3bc0c3;">
+                		
+                		<div class="row">
+                          <div class="col-lg-6 col-md-6 col-xs-6 col-sm-12">
+            <div class="form-group ">
+                <label>Nom <span class="text-danger">*</span></label>
+                <input name="Nom" type="text" id="C_Nom" class="form-control " autocomplete="off" autocomplete="off" required />
+            </div>
+            <div class="form-group ">
+                <label>Prénom <span class="text-danger">*</span></label>
+                <input name="Prenom" type="text" id="C_Prenom" class="form-control " autocomplete="off" required />
+            </div>
+            <div class="form-group">
+                <label>Sexe <span class="text-danger">*</span></label>
+                <select name="Sexe" id="C_Sexe" class="form-control">
+	<option value="1">Homme</option>
+	<option value="0">Femme</option>
+</select>
+            </div>
+            <div class="form-group">
+                <label>Type mutuelle </label>
+                <input name="C_mutuelle" type="text" id="C_mutuelle" class="form-control " required />
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-xs-6 col-sm-12">
+        	<div class="form-group ">
+                <label>CIN <span class="text-danger">*</span></label>
+                <input name="CIN" type="text" id="C_CIN" class="form-control " autocomplete="off" autocomplete="off" required />
+            </div>
+            <div class="form-group">
+            	 <p align="left">         <label>Date naissance :</label>
+        
+            <input  class="form-control" type="text" style="background-color: white;"  id="datenai" name="event_date" width="247" placeholder="YYYY-MM-DD"  autocomplete="off"/>
+            <script>
+        $('#datenai').datepicker();
+    </script>
+
+            </p>
+        </div>
+        <div class="form-group">
+        	<label>Profession </label>
+                <input name="Profession" type="text" id="C_Profession" class="form-control " autocomplete="off" autocomplete="off" required />
+        </div>
+        <div class="form-group">
+             <p align="left"><label for="exampleFormControlFile1">Préscription médicale</label>
+                <input type="file" class="form-control-file" id="exampleFormControlFile1" accept=".jpg,.gif,.png,.pdf" />
+                </p>
+        </div>
+    </div>
+    </div>
+
+</div>
+<h5><i class="fa fa-phone"></i>Coordonnées</h5>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-left: 20px; padding: 30px; border-left-style: dotted; border-left-width: 2px; border-left-color: #3bc0c3;">
+    	<div class="row">
+        <div class="col-lg-6 col-md-6 col-xs-16 col-sm-12">
+            <div class="form-group">
+                <label>Telephone </label>
+                <input name="C_Tel1" type="number" id="C_Tel1" class="form-control " required />
+            </div>
+            <div class="form-group">
+                <label>Telephone 2</label>
+                <input name="C_Tel2" type="number" id="C_Tel2" class="form-control " />
+            </div>
+             <div class="form-group">
+                <label>Email</label>
+                <input name="C_Email" type="email" id="C_Email" class="form-control " required />
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-xs-16 col-sm-12">
+             <div class="form-group">
+                <p align="left">   <label>Adresse </label>
+             <textarea name="Details" id="Details" style="height: 150px" class="form-control " type="text"></textarea>
+        
+         </p>
+            </div>
+           
+        </div>
+    </div>
+</div>
+<h5><i class="fa fa-medkit"></i>Détails supplémentaire</h5>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-left: 20px; padding: 30px; border-left-style: dotted; border-left-width: 2px; border-left-color: #3bc0c3;">
+        <div class="form-group">
+            <p align="left">   <label>Détails :</label>
+             <textarea name="Details" id="Details_pat" style="height: 100px" class="form-control " type="text"></textarea>
+        
+         </p>
+        </div>
+    </div>
+
+</div>
+
+ <button type="submit" class="btn btn-primary btn-lg pull-right" id="BtnSave" ><i class="fa fa-floppy-o" ></i>Enregistrer</button>
+
+<script src="js/submit.js"></script>
+</form>
+
+
+
+
+
+        </main>
+</body>
